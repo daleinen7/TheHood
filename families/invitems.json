@@ -1,0 +1,20 @@
+{
+	"name": "invITEMS",
+	"plugin-id": "Sprite",
+	"sid": 785802905943483,
+	"instanceVariables": [
+		{
+			"name": "IconFrame",
+			"type": "number",
+			"desc": "",
+			"sid": 303658896858476
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"JoltCola",
+		"Flashlight",
+		"rocks"
+	]
+}

@@ -1,0 +1,1554 @@
+{
+	"name": "Tunnel_01",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Inventory"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Global Vars"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Functions"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 377793048353833
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 792792649033136,
+					"parameters": {
+						"object-to-create": "Darren",
+						"layer": "6",
+						"x": "289",
+						"y": "936",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 101081619886600
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 617011777809559
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ScrollToJD",
+					"sid": 761196786934827,
+					"parameters": {
+						"x": "jd.X",
+						"y": "jd.Y-100"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ScrollToJD",
+					"sid": 718809864958987,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "jd",
+						"x": true,
+						"y": false,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				}
+			],
+			"sid": 672646985109297
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "OLD SHIT",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 980990777523553,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "jd",
+							"sid": 524114856278415,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jd",
+							"sid": 314106158687788,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "jd",
+							"sid": 234952403378903,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "jd",
+							"sid": 603867523558709,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Compass",
+							"sid": 706732263971468,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 460025346163457
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "jd",
+							"sid": 233222280546808,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "jd",
+							"sid": 886290064869882
+						}
+					],
+					"sid": 200739141299702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 148156900037447,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "jd",
+							"sid": 691687951438449,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jd",
+							"sid": 861724074203567,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "jd",
+							"sid": 733293444013465,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "jd",
+							"sid": 719498097067073,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Compass",
+							"sid": 937325784574028,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 440835386859310
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 593564295137499,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jd",
+							"sid": 681266763230334,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "jd",
+							"sid": 892740314442167,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 705517439651990
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-speed",
+							"objectClass": "jd",
+							"sid": 874749611251683,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"comparison": 0,
+								"speed": "0"
+							}
+						},
+						{
+							"id": "is-enabled",
+							"objectClass": "jd",
+							"sid": 902018068974080,
+							"disabled": true,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 665285704506755,
+							"parameters": {
+								"key": 37
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 256879078341736,
+							"parameters": {
+								"key": 39
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "jd",
+							"sid": 738895881593367,
+							"behaviorType": "Tween",
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 221915251587704,
+							"parameters": {
+								"key": 90
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jd",
+							"sid": 558906434189661,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 412875732414976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 146538384377533,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 619832940699569,
+							"parameters": {
+								"animation": "\"walk\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 417346156249645
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 233887245461430,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 241429794900088
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 546174976840780,
+							"parameters": {
+								"comparison": 0,
+								"number": "5"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 796358845803699,
+							"parameters": {
+								"animation": "\"walk\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 948680608660821
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 855609701965392,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 867152057863336
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 550743258785179,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 390064876841479,
+							"parameters": {
+								"animation": "\"walkaway\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 141566621107265
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 560647972125831,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 418650791612394
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 759137987026528,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 793690540899271,
+							"parameters": {
+								"animation": "\"walkaway\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 964673174626054
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 942903219959601,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 703090026776450
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 766921309970228,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 272685279281200,
+							"parameters": {
+								"animation": "\"walkto\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 880586991508762
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 845227219265302,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 128554080033153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jd",
+							"sid": 634865834374018,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jd",
+							"sid": 185511697895613,
+							"parameters": {
+								"animation": "\"walkto\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 608422433360595
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 802687008648163,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"JD Ft\" & floor(random(1, 5))",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 309318997270935
+				}
+			],
+			"sid": 909598995847548
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Darren Patrol2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Darren",
+							"sid": 590219221331608
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Darren",
+							"sid": 568670553820337,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"patrolright150\"",
+								"property": "offsetX",
+								"end-value": "Darren.X+150",
+								"time": "5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Darren",
+							"sid": 271101393811513,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Darren",
+							"sid": 243684533955457,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 503960438171827
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Darren",
+							"sid": 576662343684799,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"patrolright150\""
+							}
+						},
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Darren",
+							"sid": 568303707742999,
+							"disabled": true,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "jd",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Darren",
+							"sid": 341926445285556,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"patrolleft150\"",
+								"property": "offsetX",
+								"end-value": "Darren.X-150",
+								"time": "5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Darren",
+							"sid": 303087044555143,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 194646785046863
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Darren",
+							"sid": 764802426681750,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"patrolleft150\""
+							}
+						},
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Darren",
+							"sid": 953707824275889,
+							"disabled": true,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "jd",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Darren",
+							"sid": 307932877458734,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"patrolright150\"",
+								"property": "offsetX",
+								"end-value": "Darren.X+150",
+								"time": "5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Darren",
+							"sid": 413329240961891,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 204132028779588
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Darren",
+							"sid": 730996287078280,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "jd",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 457558185811610
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all-tweens",
+							"objectClass": "Darren",
+							"sid": 133963341680623,
+							"behaviorType": "Tween"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Darren",
+							"sid": 144122535294138,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Darren",
+							"sid": 403832676969701,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"attack\"",
+								"property": "offsetX",
+								"end-value": "jd.X+23",
+								"time": "1",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 888034703920991,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Darren",
+							"sid": 217997757090580,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"attack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Darren",
+							"sid": 894759794240358,
+							"parameters": {
+								"animation": "\"grab\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "jd",
+							"sid": 451709788181157,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						}
+					],
+					"sid": 851014764107524,
+					"disabled": true
+				}
+			],
+			"sid": 550156713606067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 346869366922075,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 224737848803940,
+					"parameters": {
+						"object": "cornerRT"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "cornerRT",
+					"sid": 450400678172319,
+					"parameters": {
+						"unique-id": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 569783711079004,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "LocationX",
+						"value": "jd.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 964286853477854,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "LocationY",
+						"value": "jd.Y"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "jd",
+					"sid": 511737310431901
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 616466560002380,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "jd",
+					"sid": 656736351646130,
+					"disabled": true,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 846908552807941,
+					"parameters": {
+						"instance-variable": "LocationX",
+						"value": "jd.ImagePointX(0)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 856601293322932,
+					"parameters": {
+						"instance-variable": "LocationY",
+						"value": "jd.ImagePointY(0)"
+					}
+				},
+				{
+					"id": "stop-all-tweens",
+					"objectClass": "jd",
+					"sid": 737020632330711,
+					"behaviorType": "Tween"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "jd",
+					"sid": 902843430101909,
+					"disabled": true,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 805870672367457,
+					"disabled": true,
+					"parameters": {
+						"animation": "\"walkto\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "FloorSolid",
+					"sid": 795106719114947,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 947446070705909,
+					"behaviorType": "Tween",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "jd",
+					"sid": 382057220343067,
+					"disabled": true,
+					"parameters": {
+						"layer": "11"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "jd",
+					"sid": 639986867923290,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goright\"",
+						"property": "position",
+						"end-x": "873",
+						"end-y": "jd.Y+109",
+						"time": "2",
+						"ease": "noease",
+						"destroy-on-complete": "yes",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 639932704244842
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "jd",
+					"sid": 964571134589112,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goright\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 751945248902160,
+					"parameters": {
+						"animation": "\"walkto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 624473560294330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 452899579689080,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "jd",
+					"sid": 903513372676365,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goright\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all-tweens",
+					"objectClass": "jd",
+					"sid": 800240215963205,
+					"behaviorType": "Tween"
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "jd",
+					"sid": 298206943700768,
+					"disabled": true,
+					"parameters": {
+						"layer": "6"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 290388708456135,
+					"parameters": {
+						"animation": "\"walkaway\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "jd",
+					"sid": 690982753385443,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"return\"",
+						"property": "position",
+						"end-x": "jd.LocationX",
+						"end-y": "jd.LocationY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-two-properties-tweens-end-value",
+					"objectClass": "jd",
+					"sid": 607432500884461,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goright\"",
+						"property": "position",
+						"end-x": "jd.LocationX",
+						"end-y": "jd.LocationY"
+					}
+				}
+			],
+			"sid": 891069320444262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "jd",
+					"sid": 888494063217127,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"return\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-layer",
+					"objectClass": "jd",
+					"sid": 340666116698628,
+					"parameters": {
+						"layer": "7"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 448565168447738,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "jd",
+					"sid": 752203446646511,
+					"disabled": true,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "FloorSolid",
+					"sid": 119187471461845,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 789395951394265,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 768463931139492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 784692115333584,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 744537185664141,
+					"parameters": {
+						"object": "cornerRT"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "cornerRT",
+					"sid": 654120493467715,
+					"parameters": {
+						"unique-id": "16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 321041022108298,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "LocationX",
+						"value": "jd.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 885529472992703,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "LocationY",
+						"value": "jd.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 806750089333550,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 570797841804887,
+					"parameters": {
+						"instance-variable": "LocationX",
+						"value": "jd.ImagePointX(0)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 210592271376887,
+					"parameters": {
+						"instance-variable": "LocationY",
+						"value": "jd.ImagePointY(0)"
+					}
+				},
+				{
+					"id": "stop-all-tweens",
+					"objectClass": "jd",
+					"sid": 760775438160397,
+					"behaviorType": "Tween"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "jd",
+					"sid": 340134193687966,
+					"disabled": true,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 903247210986629,
+					"parameters": {
+						"animation": "\"walkaway\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "FloorSolid",
+					"sid": 537879438647260,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 157473995141016,
+					"behaviorType": "Tween",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "jd",
+					"sid": 396399940788327,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goleft\"",
+						"property": "position",
+						"end-x": "777",
+						"end-y": "jd.Y-109",
+						"time": "2",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 414406000713557
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 458914307399073,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "jd",
+					"sid": 826128135064244,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goleft\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all-tweens",
+					"objectClass": "jd",
+					"sid": 148898365324560,
+					"behaviorType": "Tween"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "jd",
+					"sid": 800317936474809,
+					"disabled": true,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 266485755708394,
+					"parameters": {
+						"animation": "\"walkto\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "jd",
+					"sid": 240963937907262,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"return\"",
+						"property": "position",
+						"end-x": "jd.LocationX",
+						"end-y": "jd.LocationY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "jd",
+					"sid": 397392761852839,
+					"parameters": {
+						"layer": "7"
+					}
+				}
+			],
+			"sid": 469881046477919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "jd",
+					"sid": 660611970713938,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"goleft\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 159428637430141,
+					"parameters": {
+						"animation": "\"walkaway\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 973790349686824
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Drips",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 287791242475262,
+							"parameters": {
+								"interval-seconds": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 565368758149758,
+							"parameters": {
+								"object-to-create": "Drip",
+								"layer": "8",
+								"x": "1176",
+								"y": "81",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 385226088259937
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Drip",
+							"sid": 810139846091868,
+							"parameters": {
+								"animation": "\"form\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Drip",
+							"sid": 888069951872394,
+							"parameters": {
+								"animation": "\"drop\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "apply-force-towards-position",
+							"objectClass": "Drip",
+							"sid": 737202933456499,
+							"behaviorType": "Physics",
+							"parameters": {
+								"force": "10",
+								"x": "Drip.X",
+								"y": "Drip.Y+550",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 174962532172692,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Drip",
+							"sid": 362738603569181,
+							"parameters": {
+								"object": "FloorSolid"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Drip",
+							"sid": 683725047809949,
+							"parameters": {
+								"animation": "\"splash\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Drip",
+							"sid": 450512826316331,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						}
+					],
+					"sid": 893285570101102
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Drip",
+							"sid": 314854955665729,
+							"parameters": {
+								"animation": "\"splash\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Drip",
+							"sid": 772925315582458
+						}
+					],
+					"sid": 628391223360029
+				}
+			],
+			"sid": 279717851444791
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Drip",
+					"sid": 873221890248139
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "Drip",
+					"sid": 727534712053614,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "5"
+					}
+				}
+			],
+			"sid": 786280605592624
+		}
+	],
+	"sid": 813263259521249
+}

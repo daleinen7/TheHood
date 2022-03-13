@@ -1,0 +1,223 @@
+{
+	"name": "forest1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global Vars"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Functions"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Inventory"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 124286724736367
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ScrollToJD",
+					"sid": 117950462140770,
+					"parameters": {
+						"x": "jd.X",
+						"y": "jd.Y-100"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ScrollToJD",
+					"sid": 176735346703250,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "jd",
+						"x": true,
+						"y": false,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cmpsEW",
+					"sid": 891199847340708,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "cornerRT",
+					"sid": 394275911942907,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "Intersection",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 128975851378307,
+					"parameters": {
+						"variable": "SetExits",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 327495339533048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 943833590955879
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 552701609300431,
+					"parameters": {
+						"tag": "\"hoodtune\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 349741412680199,
+					"parameters": {
+						"audio-file": "Neighborhood test trackMixdown",
+						"loop": "looping",
+						"volume": "-12",
+						"tag-optional": "\"hoodtune\""
+					}
+				}
+			],
+			"sid": 803484884559796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 303411530345354
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 109200244974228,
+					"parameters": {
+						"variable": "JDEntrance",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "jd",
+					"sid": 589753010148717,
+					"parameters": {
+						"x": "cornerRT.X",
+						"y": "cornerRT.Y"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "jd",
+					"sid": 128662359677282,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 291145601008730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 219206247984667
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 784803952879370,
+					"parameters": {
+						"variable": "JDEntrance",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "jd",
+					"sid": 494150675500404,
+					"parameters": {
+						"x": "cornerLT.X",
+						"y": "cornerLT.Y"
+					}
+				}
+			],
+			"sid": 462556043582956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 253757880281655
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 141425541643244,
+					"parameters": {
+						"variable": "JDEntrance",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "jd",
+					"sid": 339933634299601,
+					"parameters": {
+						"x": "alley.X",
+						"y": "alley.Y"
+					}
+				}
+			],
+			"sid": 875619998396126
+		}
+	],
+	"sid": 965571580183306
+}

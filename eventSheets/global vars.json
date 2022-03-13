@@ -1,0 +1,82 @@
+{
+	"name": "Global Vars",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "JDEntrance",
+			"type": "number",
+			"initialValue": "101",
+			"comment": "where on the layout does JD enter (3 is INITIAL)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 267447476001175
+		},
+		{
+			"eventType": "variable",
+			"name": "JDreturnpositionX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 950749898093162
+		},
+		{
+			"eventType": "variable",
+			"name": "JDreturnpositionY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 488478205046678
+		},
+		{
+			"eventType": "variable",
+			"name": "SetExits",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 561656709982709
+		},
+		{
+			"eventType": "variable",
+			"name": "ClosestPorch",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 244033885315434
+		},
+		{
+			"eventType": "comment",
+			"text": "Variables for Testing"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 448094313742044
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 230024885648195,
+					"parameters": {
+						"variable": "305Knock",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 519814769248826
+		}
+	],
+	"sid": 107144139945433
+}

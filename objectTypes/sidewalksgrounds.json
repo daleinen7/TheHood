@@ -1,0 +1,21 @@
+{
+	"name": "SidewalksGrounds",
+	"plugin-id": "Tilemap",
+	"sid": 507346096667080,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1504,
+		"height": 224,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\GroundTilemapextended.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6920809,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

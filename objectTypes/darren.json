@@ -1,0 +1,1029 @@
+{
+	"name": "Darren",
+	"plugin-id": "Sprite",
+	"sid": 171203879700376,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 389350122480683
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 153489486119319
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4129430,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3965359,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.96875,
+								0.359375,
+								0.625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2770787,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0,
+								0.65625,
+								0.328125,
+								0.703125,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.984375,
+								0.375,
+								0.609375,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 337982,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0,
+								0.65625,
+								0.328125,
+								0.703125,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.984375,
+								0.375,
+								0.609375,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8336131,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.75,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.75,
+								0.375,
+								0.609375,
+								0.234375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3633719,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.03125,
+								0.65625,
+								0.328125,
+								0.765625,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.96875,
+								0.375,
+								0.609375,
+								0.203125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren7.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9047113,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.015625,
+								0.671875,
+								0.3125,
+								0.734375,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.96875,
+								0.375,
+								0.609375,
+								0.234375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren8.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9729355,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.59375,
+								0.59375,
+								0.5,
+								0.96875,
+								0.359375,
+								0.625,
+								0.296875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren9.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7615362,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.6875,
+								0.34375,
+								0.640625,
+								0.296875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 373632984676508,
+				"name": "walk",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4826148,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6197993,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8956820,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2289836,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9936008,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7810205,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 248946699058991,
+				"name": "idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9222606,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.640625,
+								0.34375,
+								0.65625,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.671875,
+								0.34375,
+								0.640625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9740560,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.96875,
+								0.359375,
+								0.625,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8763822,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0,
+								0.65625,
+								0.328125,
+								0.703125,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.984375,
+								0.375,
+								0.609375,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3476404,
+						"collisionPoly": {
+							"points": [
+								0.296875,
+								0.296875,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.75,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.75,
+								0.375,
+								0.609375,
+								0.234375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren7.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5215004,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.015625,
+								0.671875,
+								0.3125,
+								0.734375,
+								0.5,
+								0.609375,
+								0.609375,
+								0.5,
+								0.96875,
+								0.375,
+								0.609375,
+								0.234375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\elsca\\Desktop\\Neigborhood the game_desktop folder\\NPCs\\Darren8.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4841283,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.59375,
+								0.59375,
+								0.5,
+								0.96875,
+								0.359375,
+								0.625,
+								0.296875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 486553468935004,
+				"name": "run",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 16
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3970722,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 2
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7433655,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6199946,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 2
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1276724,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 407883,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack7.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4174371,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 2
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack8.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5284207,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack9.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4194052,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\Darren_attack10.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1605539,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.390625,
+								0.5,
+								0.015625,
+								0.65625,
+								0.328125,
+								0.6875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.421875,
+								0.5625,
+								0.390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 796112834419270,
+				"name": "grab",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

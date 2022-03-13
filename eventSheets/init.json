@@ -1,0 +1,118 @@
+{
+	"name": "Init",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 955373485563783
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 270791499076816,
+					"parameters": {
+						"tag": "\"IntersectionNav\"",
+						"file": "IntersectionNav.json"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 145600875589446,
+					"parameters": {
+						"tag": "\"invDB\"",
+						"file": "invDB.json"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 220789571075544,
+					"parameters": {
+						"tag": "\"invCURRENT\"",
+						"file": "invCURRENT.json"
+					}
+				}
+			],
+			"sid": 105376356597423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 906981190483207,
+					"parameters": {
+						"tag": "\"IntersectionNav\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "IntersectionNav",
+					"sid": 309024905363292,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 911946376389361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 749813205966294,
+					"parameters": {
+						"tag": "\"invDB\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "invDB",
+					"sid": 171491441210392,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 276527738285532
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 929353074625743,
+					"parameters": {
+						"tag": "\"invCURRENT\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "invCURRENT",
+					"sid": 901918016605456,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 126825400785086
+		}
+	],
+	"sid": 631141059929293
+}

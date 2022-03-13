@@ -1,0 +1,15 @@
+{
+	"name": "inv1Quantity3",
+	"plugin-id": "Text",
+	"sid": 731771177096069,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 870260706475498
+		}
+	],
+	"effectTypes": []
+}

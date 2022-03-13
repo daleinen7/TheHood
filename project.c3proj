@@ -1,0 +1,552 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 28503,
+	"name": "New project",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		}
+	],
+	"uniqueId": "m60vd8sm1py",
+	"objectTypes": {
+		"items": [
+			"jd",
+			"Keyboard",
+			"Audio",
+			"Darren",
+			"ScrollToJD",
+			"Sprite2",
+			"Stnst",
+			"AJAX",
+			"IntersectionNav",
+			"APT_south",
+			"APT_north",
+			"BLAST"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Tilemap3",
+					"Tilemap4",
+					"torch1",
+					"ladder",
+					"overladderGradation",
+					"CaveBGSplotch",
+					"Drip"
+				],
+				"subfolders": [],
+				"name": "Caves"
+			},
+			{
+				"items": [
+					"SidewalksGrounds",
+					"Bung1",
+					"Bung1Side",
+					"Bung2",
+					"Bung2Side",
+					"Bung3",
+					"Bung3Side",
+					"Bung4",
+					"Bund4Side",
+					"Grassy",
+					"Tree1",
+					"Walkways",
+					"Tree2",
+					"tree3",
+					"BGInsideHouse",
+					"walkwy_far",
+					"walkwy_mid",
+					"walkwy_near",
+					"Fence",
+					"APT_front"
+				],
+				"subfolders": [],
+				"name": "Streets"
+			},
+			{
+				"items": [
+					"cmpsWE",
+					"engybar",
+					"fearbar",
+					"fearbarmarker",
+					"Flashlight",
+					"HUDbox",
+					"invBOX",
+					"cmpsSN",
+					"cmpsNS",
+					"cmpsEW",
+					"lifebar",
+					"invDB",
+					"JoltCola",
+					"itemPICKtag",
+					"itemPickPop",
+					"invCURRENT",
+					"invBOX2",
+					"invBOX3",
+					"rocks",
+					"inv1Quantity",
+					"inv1Quantity2",
+					"inv1Quantity3"
+				],
+				"subfolders": [],
+				"name": "UI 1"
+			},
+			{
+				"items": [
+					"cornerLT",
+					"cornerRT",
+					"DOOR",
+					"FloorSolid",
+					"toSIDEWALK",
+					"toDOORS",
+					"BoundarySolid",
+					"toHOME",
+					"closeBoundarySolid",
+					"closeFloorSolid2",
+					"alley"
+				],
+				"subfolders": [],
+				"name": "Triggers&Solids"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Compass",
+			"invITEMS"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Tunnel_01",
+			"mapleW",
+			"parkview1",
+			"Basement",
+			"mapleE",
+			"forest1",
+			"parkAPT"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Tunnel_01",
+			"mapleW",
+			"parkview1",
+			"Global Vars",
+			"Movement",
+			"Basement",
+			"Functions",
+			"Init",
+			"mapleE",
+			"parkAPT",
+			"forest1",
+			"Events at Houses",
+			"Inventory"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 609168147713095,
+					"script-info": {
+						"purpose": "main"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "us_ft1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 956993206275254
+				},
+				{
+					"name": "us_ft3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 479521664232298
+				},
+				{
+					"name": "us_ft5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 620194370726738
+				},
+				{
+					"name": "us_ft7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 410811804968856
+				},
+				{
+					"name": "JD Ft1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 914618553150658
+				},
+				{
+					"name": "JD Ft2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 622520174633271
+				},
+				{
+					"name": "JD Ft3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 602791969425898
+				},
+				{
+					"name": "JD Ft4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 656252839435684
+				},
+				{
+					"name": "JD Ft5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 373536822907847
+				},
+				{
+					"name": "medkit3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 635510409825388
+				},
+				{
+					"name": "dismiss1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 759904982230426
+				},
+				{
+					"name": "dlg_options.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 979233453171604
+				},
+				{
+					"name": "dlg_swoosh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 559953778299649
+				},
+				{
+					"name": "donate1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 404017338530987
+				},
+				{
+					"name": "enhit2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 360621835727517
+				},
+				{
+					"name": "helpbell.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 259047727031590
+				},
+				{
+					"name": "hire1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 285360404469673
+				},
+				{
+					"name": "nightbird.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 620033407946427
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Neighborhood test trackMixdown.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 559007403520114
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 379684368461883,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 871476420618278,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 441589753366200,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 896525114876203,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 930260208151894,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 147903502878976,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 302749244276497,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "IntersectionNav.json",
+					"type": "application/json",
+					"sid": 999713178176432
+				},
+				{
+					"name": "invDB.json",
+					"type": "application/json",
+					"sid": 757356145399369
+				},
+				{
+					"name": "invCURRENT.json",
+					"type": "application/json",
+					"sid": 829829048809674
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 720,
+	"viewportHeight": 380,
+	"firstLayout": "Basement"
+}

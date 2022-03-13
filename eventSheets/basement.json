@@ -1,0 +1,36 @@
+{
+	"name": "Basement",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 200307134933819
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 160552910922109,
+					"parameters": {
+						"layout": "parkview1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 933481699967363,
+					"parameters": {
+						"variable": "JDEntrance",
+						"value": "101"
+					}
+				}
+			],
+			"sid": 837354498643364
+		}
+	],
+	"sid": 144881436520505
+}

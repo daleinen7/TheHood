@@ -1,0 +1,57 @@
+{
+	"name": "Bung2Side",
+	"plugin-id": "Sprite",
+	"sid": 357130267558126,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 890,
+						"height": 355,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5524023,
+						"collisionPoly": {
+							"points": [
+								0.8325842696629213,
+								0.5,
+								0.9370786516853933,
+								0.8394366197183099,
+								0.5,
+								0.8985915492957747,
+								0.10561797752808988,
+								0.7352112676056338,
+								0.15393258426966294,
+								0.5,
+								0.14157303370786511,
+								0.352112676056338,
+								0.5,
+								0.08450704225352113,
+								0.8348314606741574,
+								0.4140845070422535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 367727621927597,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

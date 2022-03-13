@@ -1,0 +1,14 @@
+{
+	"name": "Compass",
+	"plugin-id": "Sprite",
+	"sid": 281548072045943,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"cmpsWE",
+		"cmpsEW",
+		"cmpsNS",
+		"cmpsSN"
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "Walkways",
+	"plugin-id": "Tilemap",
+	"sid": 461959800751633,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 352,
+		"height": 224,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\jdoza\\Desktop\\Hood Files\\HouseWalkways.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8562501,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

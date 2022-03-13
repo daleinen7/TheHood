@@ -1,0 +1,201 @@
+{
+	"name": "parkAPT",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global Vars"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Movement"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 455050279458593
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ScrollToJD",
+					"sid": 526247631140513,
+					"parameters": {
+						"x": "jd.X",
+						"y": "jd.Y-100"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ScrollToJD",
+					"sid": 872731730286019,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "jd",
+						"x": true,
+						"y": false,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cmpsSN",
+					"sid": 487986495108326,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "cornerRT",
+					"sid": 569948646771839,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "Intersection",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 703604800299917,
+					"parameters": {
+						"variable": "SetExits",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "closeBoundarySolid",
+					"sid": 928995470232023,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "closeFloorSolid2",
+					"sid": 395039983966440,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 426789491102186
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 573321726780062
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 890937763298827,
+					"parameters": {
+						"tag": "\"hoodtune\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 652868617083300,
+					"parameters": {
+						"audio-file": "Neighborhood test trackMixdown",
+						"loop": "looping",
+						"volume": "-12",
+						"tag-optional": "\"hoodtune\""
+					}
+				}
+			],
+			"sid": 197742524419770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 131360017417524
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 886903309967593,
+					"parameters": {
+						"variable": "JDEntrance",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "jd",
+					"sid": 376831657500319,
+					"parameters": {
+						"x": "cornerRT.X",
+						"y": "cornerRT.Y"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "jd",
+					"sid": 796915423452180,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 744070297175857
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 843932896082381
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 864508374883437,
+					"parameters": {
+						"variable": "JDEntrance",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "jd",
+					"sid": 392045496677158,
+					"parameters": {
+						"x": "cornerLT.X",
+						"y": "cornerLT.Y"
+					}
+				}
+			],
+			"sid": 420998382942353
+		}
+	],
+	"sid": 261429731989108
+}

@@ -1,0 +1,57 @@
+{
+	"name": "Bung3",
+	"plugin-id": "Sprite",
+	"sid": 686001710575971,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 361,
+						"height": 364,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5117601,
+						"collisionPoly": {
+							"points": [
+								0.20221606648199447,
+								0.20054945054945056,
+								0.5,
+								0.20054945054945056,
+								0.7950138504155124,
+								0.20054945054945056,
+								0.9390581717451524,
+								0.5,
+								0.9085872576177285,
+								0.9093406593406593,
+								0.5,
+								0.9175824175824175,
+								0.0886426592797784,
+								0.9093406593406593,
+								0.0886426592797784,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 413480039254030,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

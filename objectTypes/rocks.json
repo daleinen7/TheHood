@@ -1,0 +1,55 @@
+{
+	"name": "rocks",
+	"plugin-id": "Sprite",
+	"sid": 719787927121842,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 119389745517792
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 31,
+						"originX": 0.59375,
+						"originY": 0.20967741935483872,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 82674,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.012096866484611375,
+								0.984375,
+								0.04838709677419355,
+								0.984375,
+								1,
+								0,
+								0.883064454601657
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 550019022167934,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

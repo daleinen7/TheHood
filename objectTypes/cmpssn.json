@@ -1,0 +1,95 @@
+{
+	"name": "cmpsSN",
+	"plugin-id": "Sprite",
+	"sid": 316144625579295,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 989734756828642
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 77,
+						"height": 25,
+						"originX": 0.2077922077922078,
+						"originY": 0.96,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 742036,
+						"collisionPoly": {
+							"points": [
+								0.1038961038961039,
+								0.32,
+								0.5,
+								0.6,
+								0.8831168831168831,
+								0.32,
+								0.8961038961038961,
+								0.5,
+								0.8961038961038961,
+								0.68,
+								0.5,
+								0.68,
+								0.09090909090909091,
+								0.68,
+								0.09090909090909091,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 77,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4857609,
+						"collisionPoly": {
+							"points": [
+								0.11688311688311688,
+								0.36,
+								0.5,
+								0.6,
+								0.8831168831168831,
+								0.32,
+								0.8961038961038961,
+								0.5,
+								0.8961038961038961,
+								0.68,
+								0.5,
+								0.68,
+								0.11688311688311688,
+								0.6,
+								0.09090909090909091,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 306445904758099,
+				"name": "dir",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,2057 @@
+{
+	"name": "Inventory",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "invOPENslot",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 390683604702507
+		},
+		{
+			"eventType": "variable",
+			"name": "invSLOT1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 809517873015977
+		},
+		{
+			"eventType": "variable",
+			"name": "invSLOT2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 602079195422567
+		},
+		{
+			"eventType": "variable",
+			"name": "invSLOT3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 935120102238305
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 700674764432883
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "UpdateInventory",
+					"sid": 726614023477091
+				}
+			],
+			"sid": 219001688468730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 682827750042227,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 319264968673030,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 244728439513175,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 424954609070494,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 378017656557411,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 779822669381073
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 535726403035690,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "invCURRENT",
+					"sid": 932380393899176,
+					"parameters": {
+						"x": "1",
+						"y": "1",
+						"value": "invITEMS.IconFrame"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "invCURRENT",
+					"sid": 942539718450861,
+					"parameters": {
+						"x": "1",
+						"y": "2",
+						"value": "invCURRENT.At(1,2)+1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 248041057533843,
+					"parameters": {
+						"variable": "invSLOT1",
+						"value": "1"
+					}
+				},
+				{
+					"callFunction": "UpdateInventory",
+					"sid": 167925604101689
+				}
+			],
+			"sid": 910263343844251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 916505831555114,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 533865043045678,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 404701800128958,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 820547550770334,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 458088722284418,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 574951488890929
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 425756898061607,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 397710678356318,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 615685512138902,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 351829460487262,
+							"parameters": {
+								"x": "2",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 379520788557646,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 959936405209434,
+							"parameters": {
+								"variable": "invSLOT2",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 992237807233835
+						}
+					],
+					"sid": 335686963104505
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 229020102848246,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 307045101651729,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 185593437861052
+						}
+					],
+					"sid": 931633233208393
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 162636342628249,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 445316847803019,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 822369253405693,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 925347711653807,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 567033317375405,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 290069482746698
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 699229788771390,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 839890578593871,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 446393291432983,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 909765730759318,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 841335110853308,
+							"parameters": {
+								"x": "3",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 968758294583287,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 133568179057153,
+							"parameters": {
+								"variable": "invSLOT3",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 573371231991452
+						}
+					],
+					"sid": 927866243647196
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 865423528222325,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 266200854539083,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 874322865515136
+						}
+					],
+					"sid": 131161032953790
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 741273172953263,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 618796464413688,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 224545218081163
+						}
+					],
+					"sid": 231392007269247
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 620415605424641,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 756363853614961,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 547276706775210,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 928588937970003,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 173960571484339,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 291267930593691
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 549333180028155,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 759165284939949,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 614668097264099,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 111821930014685,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 127676970092365,
+							"parameters": {
+								"x": "2",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 275843565362294,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 574373288917950,
+							"parameters": {
+								"variable": "invSLOT2",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 520783884990097
+						}
+					],
+					"sid": 225611785053011
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 152186219741738,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 336583557550346,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 662186573612934
+						}
+					],
+					"sid": 448421401078654
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 754587872879445,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 233698783286660,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 194099059426319
+						}
+					],
+					"sid": 908672759822434
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 738939079786886,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 843096404467509,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 671606420863590,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 913718296179818,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 940257257596348,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 728956171248793
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 397384226543510,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 398841025341280,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 521182496427581,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 987168338201409,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 188963013966544,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 402223128830567,
+							"parameters": {
+								"variable": "invSLOT1",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 612144946333641
+						}
+					],
+					"sid": 130428554462738
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 870740676739212,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 860203731667903,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 359263407388835
+						}
+					],
+					"sid": 684769363641964
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 804694316481885,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 479886890835072,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 252695146944272,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 497157213805543,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 424551785731207,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 362161249296679
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 286543053201436,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 303438134300019,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 381813321408442,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 930491324993196,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 810567242078817,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 246809409672970,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 179646903186564,
+							"parameters": {
+								"variable": "invSLOT1",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 857374212913552
+						}
+					],
+					"sid": 570437946190812,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 767310663807930,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 521302511156784,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 273847603089658
+						}
+					],
+					"sid": 307781135653944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 964005813274421,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 291239856051965,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 557500791407728
+						}
+					],
+					"sid": 308967552810070
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 586558342868750,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 584624363474159,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 558155951983698,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 274928659364562,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 252068423182898,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 574945287717787
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 217399747042165,
+					"parameters": {
+						"audio-file": "hire1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 698377404591948,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 105689776531419,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 779287986192803,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"value": "invITEMS.IconFrame"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 218533183015201,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 523196666921376,
+							"parameters": {
+								"variable": "invSLOT1",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 861547346930334
+						}
+					],
+					"sid": 630654712412032,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 614428401920198,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 297342632488878,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 876548843543345
+						}
+					],
+					"sid": 959217307041696
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 600664628958884,
+							"parameters": {
+								"variable": "invSLOT1",
+								"comparison": 0,
+								"value": "111"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 248423542752357,
+							"disabled": true,
+							"parameters": {
+								"variable": "invSLOT2",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 293269843534932,
+							"disabled": true,
+							"parameters": {
+								"variable": "invSLOT3",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 526647578027264,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 329089128950901,
+									"parameters": {
+										"first-value": "invCURRENT.At(1,1)",
+										"comparison": 0,
+										"second-value": "invITEMS.IconFrame"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "invCURRENT",
+									"sid": 516163536663194,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "invCURRENT.At(3,2)+1"
+									}
+								},
+								{
+									"callFunction": "UpdateInventory",
+									"sid": 396216992647386
+								}
+							],
+							"sid": 255194530272509
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 611957234527065,
+									"parameters": {
+										"first-value": "invCURRENT.At(2,1)",
+										"comparison": 0,
+										"second-value": "invITEMS.IconFrame"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "invCURRENT",
+									"sid": 662051761933953,
+									"parameters": {
+										"x": "2",
+										"y": "2",
+										"value": "invCURRENT.At(3,2)+1"
+									}
+								},
+								{
+									"callFunction": "UpdateInventory",
+									"sid": 967298585363808
+								}
+							],
+							"sid": 547834341837832
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 728038917496932,
+									"parameters": {
+										"first-value": "invCURRENT.At(3,1)",
+										"comparison": 0,
+										"second-value": "invITEMS.IconFrame"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "invCURRENT",
+									"sid": 876886434241926,
+									"parameters": {
+										"x": "3",
+										"y": "2",
+										"value": "invCURRENT.At(3,2)+1"
+									}
+								},
+								{
+									"callFunction": "UpdateInventory",
+									"sid": 120907203857744
+								}
+							],
+							"sid": 340423230845799
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 123473918787635,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 497062715354173,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 799280891165596,
+					"parameters": {
+						"variable": "invSLOT1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 581608215855962,
+					"parameters": {
+						"variable": "invSLOT2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 638537883264123,
+					"parameters": {
+						"variable": "invSLOT3",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "invITEMS",
+					"sid": 327918147122520
+				}
+			],
+			"sid": 875808155234826,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 992572848047818,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 673223257565290,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 766031375195291,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 618163378401631,
+							"parameters": {
+								"audio-file": "helpbell",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 604746852576435
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 769808570272435,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "invITEMS",
+							"sid": 379585525993616
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 479436827221810,
+							"parameters": {
+								"audio-file": "hire1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 258687426465288,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 530146120705483
+						}
+					],
+					"sid": 832704571270241
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 610110302109209,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "invITEMS",
+							"sid": 962493072217854
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 686464753863663,
+							"parameters": {
+								"audio-file": "hire1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 521999907999990,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 387346133338684
+						}
+					],
+					"sid": 214669591518814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 721881916520450,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "invITEMS",
+							"sid": 729704944440233
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 835322999105980,
+							"parameters": {
+								"audio-file": "hire1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 181071963921486,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)+1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 981120325366448
+						}
+					],
+					"sid": 999399678785407
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 359364916246740,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,1)",
+								"comparison": 0,
+								"second-value": "invITEMS.IconFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 427250215670119,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)+1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 677922100581676,
+							"parameters": {
+								"audio-file": "hire1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 950901601797688
+						}
+					],
+					"sid": 299488330403342,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 940320986625651,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "itemPICKtag",
+					"sid": 264405495912659,
+					"parameters": {
+						"x": "invITEMS.X",
+						"y": "invITEMS.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itemPICKtag",
+					"sid": 551511347755988,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "itemPickPop",
+					"sid": 695404156432739,
+					"parameters": {
+						"object": "itemPICKtag",
+						"image-point-optional": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itemPickPop",
+					"sid": 290889469859494,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "itemPickPop",
+					"sid": 113772761862269,
+					"parameters": {
+						"text": "invITEMS.ObjectTypeName"
+					}
+				}
+			],
+			"sid": 216985922391655
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 580212176768424,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "jd",
+					"sid": 186746354820506,
+					"parameters": {
+						"object": "invITEMS"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 572061544654002,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 327858257157531,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [],
+			"sid": 392036621627084,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 611606339807165,
+							"parameters": {
+								"variable": "invSLOT1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 644454963241529,
+							"parameters": {
+								"audio-file": "helpbell",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 377241022815885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 862167868659004,
+							"parameters": {
+								"variable": "invSLOT1",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 440447399175810,
+							"parameters": {
+								"audio-file": "enhit2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 643646767894961,
+							"parameters": {
+								"object-to-create": "BLAST",
+								"layer": "11",
+								"x": "jd.X",
+								"y": "jd.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 612274455340623,
+							"parameters": {
+								"x": "1",
+								"y": "2",
+								"value": "invCURRENT.At(1,2)-1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 217176083445678
+						}
+					],
+					"sid": 898670691620650
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 697033669699864,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [],
+			"sid": 264398068793354,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 588867989948558,
+							"parameters": {
+								"variable": "invSLOT2",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 746084696266486,
+							"parameters": {
+								"audio-file": "helpbell",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 530430501929644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 324717010923214,
+							"parameters": {
+								"variable": "invSLOT2",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 734268104288476,
+							"parameters": {
+								"audio-file": "enhit2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 818067009088480,
+							"parameters": {
+								"object-to-create": "BLAST",
+								"layer": "11",
+								"x": "jd.X",
+								"y": "jd.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 553727150154630,
+							"parameters": {
+								"x": "2",
+								"y": "2",
+								"value": "invCURRENT.At(2,2)-1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 140971122065403
+						}
+					],
+					"sid": 787490485492697
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 873645899454789,
+					"parameters": {
+						"key": 84
+					}
+				}
+			],
+			"actions": [],
+			"sid": 230071474581470,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 506932633304406,
+							"parameters": {
+								"variable": "invSLOT3",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 273925286466495,
+							"parameters": {
+								"audio-file": "helpbell",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 898635030745452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 499262038161885,
+							"parameters": {
+								"variable": "invSLOT3",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 369608191332707,
+							"parameters": {
+								"audio-file": "enhit2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 251314861420034,
+							"parameters": {
+								"object-to-create": "BLAST",
+								"layer": "11",
+								"x": "jd.X",
+								"y": "jd.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 293208897475959,
+							"parameters": {
+								"x": "3",
+								"y": "2",
+								"value": "invCURRENT.At(3,2)-1"
+							}
+						},
+						{
+							"callFunction": "UpdateInventory",
+							"sid": 284319541980758
+						}
+					],
+					"sid": 440448700030321
+				}
+			]
+		}
+	],
+	"sid": 562912266779027
+}

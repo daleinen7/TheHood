@@ -1,0 +1,293 @@
+{
+	"name": "Functions",
+	"events": [
+		{
+			"functionName": "TurnLeft",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 413308073249134,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 266509226071670,
+					"parameters": {
+						"instance-variable": "LocationX",
+						"value": "jd.ImagePointX(0)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jd",
+					"sid": 863313310300229,
+					"parameters": {
+						"instance-variable": "LocationY",
+						"value": "jd.ImagePointY(0)"
+					}
+				},
+				{
+					"id": "stop-all-tweens",
+					"objectClass": "jd",
+					"sid": 972866612711782,
+					"behaviorType": "Tween"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jd",
+					"sid": 849582461559052,
+					"parameters": {
+						"animation": "\"walkaway\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "FloorSolid",
+					"sid": 852707097251961,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jd",
+					"sid": 740807540872138,
+					"behaviorType": "Tween",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "jd",
+					"sid": 193207345580138,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"takealeft\"",
+						"property": "position",
+						"end-x": "jd.X+75",
+						"end-y": "jd.Y-45",
+						"time": "1.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 749850735176893
+		},
+		{
+			"functionName": "UpdateInventory",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "invBOX",
+					"sid": 715459329299526,
+					"parameters": {
+						"frame-number": "invCURRENT.At(1,1)"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "invBOX2",
+					"sid": 777536780907431,
+					"parameters": {
+						"frame-number": "invCURRENT.At(2,1)"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "invBOX3",
+					"sid": 133444152603986,
+					"parameters": {
+						"frame-number": "invCURRENT.At(3,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "inv1Quantity",
+					"sid": 687283057280823,
+					"parameters": {
+						"text": "invCURRENT.At(1,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "inv1Quantity2",
+					"sid": 524196879140428,
+					"parameters": {
+						"text": "invCURRENT.At(2,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "inv1Quantity3",
+					"sid": 720680935582896,
+					"parameters": {
+						"text": "invCURRENT.At(3,2)"
+					}
+				}
+			],
+			"sid": 462426635312236,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 583071173440522,
+							"parameters": {
+								"first-value": "invCURRENT.At(1,2)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 528263095418999,
+							"parameters": {
+								"variable": "invSLOT1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 730658323241857,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "invBOX",
+							"sid": 106082950194965,
+							"parameters": {
+								"frame-number": "invCURRENT.At(1,1)"
+							}
+						}
+					],
+					"sid": 771584937671852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 892313988513105,
+							"parameters": {
+								"first-value": "invCURRENT.At(2,2)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 927740705759285,
+							"parameters": {
+								"variable": "invSLOT2",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 152224850538186,
+							"parameters": {
+								"x": "2",
+								"y": "1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "invBOX2",
+							"sid": 263451235441636,
+							"parameters": {
+								"frame-number": "invCURRENT.At(2,1)"
+							}
+						}
+					],
+					"sid": 279244779102208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 955919479795832,
+							"parameters": {
+								"first-value": "invCURRENT.At(3,2)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 351633380193992,
+							"parameters": {
+								"variable": "invSLOT3",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "invCURRENT",
+							"sid": 369243620027127,
+							"parameters": {
+								"x": "3",
+								"y": "1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "invBOX3",
+							"sid": 708550170642000,
+							"parameters": {
+								"frame-number": "invCURRENT.At(3,1)"
+							}
+						}
+					],
+					"sid": 262076504859751
+				}
+			]
+		}
+	],
+	"sid": 199678113190607
+}

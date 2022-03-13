@@ -1,0 +1,16 @@
+{
+	"name": "Events at Houses",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "305Knock",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 352847702199209
+		}
+	],
+	"sid": 832678560959015
+}
